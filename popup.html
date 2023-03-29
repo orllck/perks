@@ -3,22 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perks</title>
-  <link rel="stylesheet" href="popup.css">
+  <title>Popup</title>
+  <link href="/style.css" rel="stylesheet">
+  <!-- Include the popup.js script -->
+  <script src="/popup.js"></script>
 </head>
 <body>
+  <!-- Container to display matched record information -->
   <div id="matched-record-container" class="hidden">
-    <h2>Matched Perk</h2>
+    <h2>Matched Record:</h2>
     <div id="matched-record">
-      <!-- Matched record data will be populated here -->
+      <!-- Matched record information will be inserted here -->
     </div>
   </div>
 
+  <!-- Container to display the "no match" state -->
   <div id="no-match-container" class="hidden">
-    <h2>No Match Found</h2>
-    <button id="propose-perk-btn">Propose as Perk</button>
+    <h2>No match found</h2>
+    <button id="propose-perk-btn" href="https://www.google.com/">Propose as perk</button>
   </div>
-  
-  <script src="popup.js"></script>
 </body>
 </html>
