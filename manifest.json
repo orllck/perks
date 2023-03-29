@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Perks",
+    "version": "1.0.0",
+    "description": "Check if the current domain offers any perks and display relevant information",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "48": "icons/icon-default-48.png"
+      }
+    },
+    "icons": {
+      "48": "icons/icon-default-48.png",
+      "128": "icons/icon-default-128.png"
+    },
+    "permissions": [
+      "tabs",
+      "activeTab",
+      "storage"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+  }
+  
